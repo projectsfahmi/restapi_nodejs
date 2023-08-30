@@ -27,6 +27,12 @@ router.get('/:nim',(req, res, next) => {
 })
 
 router.post('/',(req, res, next) =>{
+    
+    const mspasien = {
+        nim : req.body.nim,
+        nama : req.body.nama
+    };
+
     res.status(200).json({
         message : 'Post Method Mspasien'
     })
